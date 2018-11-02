@@ -25,6 +25,14 @@
 	</properties>
 
 	<dependencies>
+		<!--Xuggler maven下载比较慢，可自行在MavenRepository下载，然后install到local Repository-->
+		<!-- mvn install:install-file -Dfile=/*/xuggle-xuggler-5.4.jar -DgroupId=xuggle -DartifactId=xuggle-xuggler -Dversion=5.4 -Dpackaging=jar -->
+		<dependency>
+			<groupId>xuggle</groupId>
+			<artifactId>xuggle-xuggler</artifactId>
+			<version>5.4</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -43,12 +51,6 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
 	</build>
 
 
